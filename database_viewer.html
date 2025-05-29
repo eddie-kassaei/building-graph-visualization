@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Database Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .node {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+        }
+        .relationship {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #28a745;
+        }
+        .asset {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #ffc107;
+        }
+        .type-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-right: 8px;
+            color: white;
+        }
+        .project { background-color: #007bff; }
+        .story { background-color: #6c757d; }
+        .room { background-color: #28a745; }
+        .object { background-color: #17a2b8; }
+        .company { background-color: #dc3545; }
+        .team { background-color: #fd7e14; }
+        .person { background-color: #6f42c1; }
+        .drawing { background-color: #20c997; }
+        .rfi { background-color: #e83e8c; }
+        .issue { background-color: #ffc107; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Building Database Viewer</h1>
+        
+        <div class="section">
+            <h2>Project Structure</h2>
+            <div id="project-structure"></div>
+        </div>
+
+        <div class="section">
+            <h2>Organizations and Teams</h2>
+            <div id="organizations"></div>
+        </div>
+
+        <div class="section">
+            <h2>Assets</h2>
+            <div id="assets"></div>
+        </div>
+
+        <div class="section">
+            <h2>Relationships</h2>
+            <div id="relationships"></div>
+        </div>
+    </div>
+
+    <script>
+        // Load the JSON data
+        fetch('building_data.json')
+            .then(response => response.json())
+            .then(data => {
+                const projectStructure = document.getElementById('project-structure');
+                const organizations = document.getElementById('organizations');
+                const assets = document.getElementById('assets');
+                const relationships = document.getElementById('relationships');
+
+                // Display Project and Stories
+                const project = data.nodes.find(n => n.type === 'Project');
+                if (project) {
+                    projectStructure.innerHTML += `
+                        <div class="node">
+                            <span class="type-badge project">Project</span>
+                            <strong>${project.name}</strong>
+                        </div>
+                    `;
+                }
+
+                // Display Stories and their Rooms
+                data.nodes.filter(n => n.type === 'Story').forEach(story => {
+                    projectStructure.innerHTML += `
+                        <div class="node" style="margin-left: 20px;">
+                            <span class="type-badge story">Story</span>
+                            <strong>${story.name}</strong>
+                        </div>
+                    `;
+
+                    // Display Rooms for this Story
+                    data.nodes.filter(n => n.type === 'Room' && n.story === story.id).forEach(room => {
+                        projectStructure.innerHTML += `
+                            <div class="node" style="margin-left: 40px;">
+                                <span class="type-badge room">Room</span>
+                                <strong>${room.name}</strong>
+                            </div>
+                        `;
+
+                        // Display Objects for this Room
+                        data.nodes.filter(n => n.type !== 'Project' && n.type !== 'Story' && n.type !== 'Room' && n.room === room.id).forEach(obj => {
+                            projectStructure.innerHTML += `
+                                <div class="node" style="margin-left: 60px;">
+                                    <span class="type-badge object">${obj.type}</span>
+                                    <strong>${obj.name}</strong>
+                                </div>
+                            `;
+                        });
+                    });
+                });
+
+                // Display Organizations and Teams
+                data.nodes.filter(n => n.type === 'Company').forEach(company => {
+                    organizations.innerHTML += `
+                        <div class="node">
+                            <span class="type-badge company">Company</span>
+                            <strong>${company.name}</strong>
+                        </div>
+                    `;
+
+                    // Display Teams for this Company
+                    data.relationships
+                        .filter(r => r.source === company.id && r.type === 'manages')
+                        .forEach(rel => {
+                            const team = data.nodes.find(n => n.id === rel.target);
+                            if (team) {
+                                organizations.innerHTML += `
+                                    <div class="node" style="margin-left: 20px;">
+                                        <span class="type-badge team">Team</span>
+                                        <strong>${team.name}</strong>
+                                    </div>
+                                `;
+
+                                // Display People in this Team
+                                data.relationships
+                                    .filter(r => r.source === team.id && r.type === 'includes')
+                                    .forEach(rel => {
+                                        const person = data.nodes.find(n => n.id === rel.target);
+                                        if (person) {
+                                            organizations.innerHTML += `
+                                                <div class="node" style="margin-left: 40px;">
+                                                    <span class="type-badge person">Person</span>
+                                                    <strong>${person.name}</strong> (${person.role})
+                                                </div>
+                                            `;
+                                        }
+                                    });
+                            }
+                        });
+                });
+
+                // Display Assets
+                data.assets.forEach(asset => {
+                    assets.innerHTML += `
+                        <div class="node">
+                            <span class="type-badge ${asset.type.toLowerCase()}">${asset.type}</span>
+                            <strong>${asset.id}</strong>
+                        </div>
+                    `;
+                });
+
+                // Display Relationships
+                data.relationships.forEach(rel => {
+                    const source = data.nodes.find(n => n.id === rel.source);
+                    const target = data.nodes.find(n => n.id === rel.target);
+                    if (source && target) {
+                        relationships.innerHTML += `
+                            <div class="relationship">
+                                <strong>${source.name || source.id}</strong> 
+                                <span style="color: #666;">${rel.type}</span> 
+                                <strong>${target.name || target.id}</strong>
+                            </div>
+                        `;
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading the data:', error));
+    </script>
+</body>
+</html> 

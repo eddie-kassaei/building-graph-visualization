@@ -1,0 +1,4706 @@
+{
+  "nodes": [
+    {
+      "id": "Project1",
+      "type": "Project",
+      "name": "Inertia Demo Building",
+      "address": "123 Main St",
+      "start_date": "2023-01-01",
+      "status": "Active"
+    },
+    {
+      "id": "Story1",
+      "type": "Story",
+      "name": "Level 1",
+      "elevation": 0
+    },
+    {
+      "id": "Story2",
+      "type": "Story",
+      "name": "Level 2",
+      "elevation": 4
+    },
+    {
+      "id": "Story3",
+      "type": "Story",
+      "name": "Level 3",
+      "elevation": 8
+    },
+    {
+      "id": "GeneralContractor",
+      "type": "Company",
+      "name": "BuildPro GC",
+      "contact": "gc@buildpro.com",
+      "phone": "+1-555-100-2000",
+      "address": "456 Contractor Ave"
+    },
+    {
+      "id": "Subcontractor1",
+      "type": "Company",
+      "name": "Ace Electric",
+      "contact": "info@aceelectric.com",
+      "phone": "+1-555-200-3000",
+      "address": "789 Electric Rd"
+    },
+    {
+      "id": "Subcontractor2",
+      "type": "Company",
+      "name": "FlowPlumb",
+      "contact": "contact@flowplumb.com",
+      "phone": "+1-555-300-4000",
+      "address": "321 Plumber St"
+    },
+    {
+      "id": "GCTeam1",
+      "type": "Team",
+      "name": "GC Field Crew",
+      "specialty": "General"
+    },
+    {
+      "id": "SubTeam1",
+      "type": "Team",
+      "name": "Electricians",
+      "specialty": "Electrical"
+    },
+    {
+      "id": "SubTeam2",
+      "type": "Team",
+      "name": "Plumbers",
+      "specialty": "Plumbing"
+    },
+    {
+      "id": "Person1",
+      "type": "Person",
+      "name": "John Smith",
+      "role": "Project Manager",
+      "email": "john.smith@example.com",
+      "phone": "+1-555-703-2753"
+    },
+    {
+      "id": "Person2",
+      "type": "Person",
+      "name": "Jane Doe",
+      "role": "Electrician",
+      "email": "jane.doe@example.com",
+      "phone": "+1-555-147-9139"
+    },
+    {
+      "id": "Person3",
+      "type": "Person",
+      "name": "Bob Johnson",
+      "role": "Plumber",
+      "email": "bob.johnson@example.com",
+      "phone": "+1-555-525-5687"
+    },
+    {
+      "id": "Room11",
+      "type": "Room",
+      "name": "Office 1",
+      "story": "Story1",
+      "area_sqm": 28.5,
+      "flooring": "Wood",
+      "status": "Pending"
+    },
+    {
+      "id": "Room12",
+      "type": "Room",
+      "name": "Conference Room 2",
+      "story": "Story1",
+      "area_sqm": 29.6,
+      "flooring": "Carpet",
+      "status": "In Progress"
+    },
+    {
+      "id": "Room13",
+      "type": "Room",
+      "name": "Break Room 3",
+      "story": "Story1",
+      "area_sqm": 37.6,
+      "flooring": "Carpet",
+      "status": "In Progress"
+    },
+    {
+      "id": "Room14",
+      "type": "Room",
+      "name": "Restroom 4",
+      "story": "Story1",
+      "area_sqm": 28.8,
+      "flooring": "Wood",
+      "status": "In Progress"
+    },
+    {
+      "id": "Room21",
+      "type": "Room",
+      "name": "Office 1",
+      "story": "Story2",
+      "area_sqm": 39.4,
+      "flooring": "Tile",
+      "status": "Approved"
+    },
+    {
+      "id": "Room22",
+      "type": "Room",
+      "name": "Conference Room 2",
+      "story": "Story2",
+      "area_sqm": 30.9,
+      "flooring": "Vinyl",
+      "status": "In Progress"
+    },
+    {
+      "id": "Room23",
+      "type": "Room",
+      "name": "Break Room 3",
+      "story": "Story2",
+      "area_sqm": 38.5,
+      "flooring": "Carpet",
+      "status": "Pending"
+    },
+    {
+      "id": "Room24",
+      "type": "Room",
+      "name": "Restroom 4",
+      "story": "Story2",
+      "area_sqm": 33.8,
+      "flooring": "Wood",
+      "status": "Installed"
+    },
+    {
+      "id": "Room31",
+      "type": "Room",
+      "name": "Office 1",
+      "story": "Story3",
+      "area_sqm": 32.1,
+      "flooring": "Tile",
+      "status": "Defective"
+    },
+    {
+      "id": "Room32",
+      "type": "Room",
+      "name": "Conference Room 2",
+      "story": "Story3",
+      "area_sqm": 33.8,
+      "flooring": "Vinyl",
+      "status": "In Progress"
+    },
+    {
+      "id": "Room33",
+      "type": "Room",
+      "name": "Break Room 3",
+      "story": "Story3",
+      "area_sqm": 35.1,
+      "flooring": "Vinyl",
+      "status": "Defective"
+    },
+    {
+      "id": "Room34",
+      "type": "Room",
+      "name": "Restroom 4",
+      "story": "Story3",
+      "area_sqm": 36.8,
+      "flooring": "Tile",
+      "status": "Defective"
+    },
+    {
+      "id": "Object111",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 1",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 205.1,
+        "width": 16.0,
+        "height": 284.6
+      },
+      "material": "Gypsum",
+      "status": "Approved",
+      "installed_date": "2023-08-30"
+    },
+    {
+      "id": "Object112",
+      "type": "Wall",
+      "name": "Wall 2",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 122.7,
+        "width": 28.8,
+        "height": 127.4
+      },
+      "material": "Glass",
+      "status": "Installed",
+      "installed_date": "2023-06-09"
+    },
+    {
+      "id": "Object113",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 3",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 285.1,
+        "width": 75.1,
+        "height": 102.3
+      },
+      "material": "Plastic",
+      "status": "Defective",
+      "installed_date": "2023-11-11"
+    },
+    {
+      "id": "Object114",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 4",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 135.0,
+        "width": 21.2,
+        "height": 15.9
+      },
+      "material": "Glass",
+      "status": "Pending",
+      "installed_date": "2023-05-27"
+    },
+    {
+      "id": "Object115",
+      "type": "Door",
+      "name": "Door 5",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 96.7,
+        "width": 45.3,
+        "height": 159.2
+      },
+      "material": "Concrete",
+      "status": "Pending",
+      "installed_date": "2023-07-20"
+    },
+    {
+      "id": "Object116",
+      "type": "Baseboard",
+      "name": "Baseboard 6",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 293.9,
+        "width": 55.6,
+        "height": 143.3
+      },
+      "material": "Glass",
+      "status": "Pending",
+      "installed_date": "2023-12-06"
+    },
+    {
+      "id": "Object117",
+      "type": "Floor Finish",
+      "name": "Floor Finish 7",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 81.2,
+        "width": 99.7,
+        "height": 259.1
+      },
+      "material": "Plastic",
+      "status": "Installed",
+      "installed_date": "2023-10-21"
+    },
+    {
+      "id": "Object118",
+      "type": "Floor Finish",
+      "name": "Floor Finish 8",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 102.3,
+        "width": 23.5,
+        "height": 114.4
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-04-16"
+    },
+    {
+      "id": "Object119",
+      "type": "Outlet",
+      "name": "Outlet 9",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 217.0,
+        "width": 33.2,
+        "height": 140.6
+      },
+      "material": "Wood",
+      "status": "Approved",
+      "installed_date": "2023-07-19"
+    },
+    {
+      "id": "Object1110",
+      "type": "Door",
+      "name": "Door 10",
+      "room": "Room11",
+      "dimensions_cm": {
+        "length": 273.3,
+        "width": 57.9,
+        "height": 93.6
+      },
+      "material": "Concrete",
+      "status": "Defective",
+      "installed_date": "2023-03-27"
+    },
+    {
+      "id": "Object121",
+      "type": "Wall",
+      "name": "Wall 1",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 233.6,
+        "width": 11.5,
+        "height": 107.4
+      },
+      "material": "Concrete",
+      "status": "Defective",
+      "installed_date": "2023-07-25"
+    },
+    {
+      "id": "Object122",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 2",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 173.4,
+        "width": 48.9,
+        "height": 42.0
+      },
+      "material": "Steel",
+      "status": "Pending",
+      "installed_date": "2023-12-12"
+    },
+    {
+      "id": "Object123",
+      "type": "Baseboard",
+      "name": "Baseboard 3",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 200.0,
+        "width": 47.1,
+        "height": 106.0
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-04-21"
+    },
+    {
+      "id": "Object124",
+      "type": "Outlet",
+      "name": "Outlet 4",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 243.6,
+        "width": 52.2,
+        "height": 124.5
+      },
+      "material": "Concrete",
+      "status": "Approved",
+      "installed_date": "2023-02-19"
+    },
+    {
+      "id": "Object125",
+      "type": "Window",
+      "name": "Window 5",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 152.4,
+        "width": 55.4,
+        "height": 137.2
+      },
+      "material": "Concrete",
+      "status": "In Progress",
+      "installed_date": "2023-06-03"
+    },
+    {
+      "id": "Object126",
+      "type": "Outlet",
+      "name": "Outlet 6",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 198.4,
+        "width": 28.8,
+        "height": 227.1
+      },
+      "material": "Wood",
+      "status": "Pending",
+      "installed_date": "2023-06-19"
+    },
+    {
+      "id": "Object127",
+      "type": "Outlet",
+      "name": "Outlet 7",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 226.7,
+        "width": 30.6,
+        "height": 35.8
+      },
+      "material": "Wood",
+      "status": "Pending",
+      "installed_date": "2023-01-08"
+    },
+    {
+      "id": "Object128",
+      "type": "Floor Finish",
+      "name": "Floor Finish 8",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 113.7,
+        "width": 77.6,
+        "height": 174.4
+      },
+      "material": "Wood",
+      "status": "Approved",
+      "installed_date": "2023-09-23"
+    },
+    {
+      "id": "Object129",
+      "type": "Outlet",
+      "name": "Outlet 9",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 256.7,
+        "width": 40.4,
+        "height": 240.2
+      },
+      "material": "Gypsum",
+      "status": "Pending",
+      "installed_date": "2023-04-22"
+    },
+    {
+      "id": "Object1210",
+      "type": "Outlet",
+      "name": "Outlet 10",
+      "room": "Room12",
+      "dimensions_cm": {
+        "length": 174.8,
+        "width": 17.3,
+        "height": 41.2
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-05-30"
+    },
+    {
+      "id": "Object131",
+      "type": "Wall",
+      "name": "Wall 1",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 66.5,
+        "width": 8.7,
+        "height": 203.6
+      },
+      "material": "Gypsum",
+      "status": "In Progress",
+      "installed_date": "2023-11-02"
+    },
+    {
+      "id": "Object132",
+      "type": "Sprinkler",
+      "name": "Sprinkler 2",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 103.5,
+        "width": 26.3,
+        "height": 146.1
+      },
+      "material": "Glass",
+      "status": "Installed",
+      "installed_date": "2023-03-07"
+    },
+    {
+      "id": "Object133",
+      "type": "Baseboard",
+      "name": "Baseboard 3",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 204.5,
+        "width": 94.6,
+        "height": 262.0
+      },
+      "material": "Plastic",
+      "status": "In Progress",
+      "installed_date": "2023-04-12"
+    },
+    {
+      "id": "Object134",
+      "type": "Outlet",
+      "name": "Outlet 4",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 246.1,
+        "width": 80.5,
+        "height": 291.9
+      },
+      "material": "Steel",
+      "status": "Defective",
+      "installed_date": "2023-12-23"
+    },
+    {
+      "id": "Object135",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 5",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 271.9,
+        "width": 86.4,
+        "height": 218.5
+      },
+      "material": "Concrete",
+      "status": "Pending",
+      "installed_date": "2023-05-16"
+    },
+    {
+      "id": "Object136",
+      "type": "Floor Finish",
+      "name": "Floor Finish 6",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 65.2,
+        "width": 42.1,
+        "height": 163.5
+      },
+      "material": "Plastic",
+      "status": "Defective",
+      "installed_date": "2023-10-16"
+    },
+    {
+      "id": "Object137",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 7",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 292.8,
+        "width": 32.7,
+        "height": 193.5
+      },
+      "material": "Plastic",
+      "status": "Pending",
+      "installed_date": "2023-05-13"
+    },
+    {
+      "id": "Object138",
+      "type": "Sprinkler",
+      "name": "Sprinkler 8",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 112.6,
+        "width": 93.3,
+        "height": 103.1
+      },
+      "material": "Steel",
+      "status": "Approved",
+      "installed_date": "2023-06-01"
+    },
+    {
+      "id": "Object139",
+      "type": "Wall",
+      "name": "Wall 9",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 61.0,
+        "width": 98.8,
+        "height": 295.5
+      },
+      "material": "Steel",
+      "status": "Installed",
+      "installed_date": "2023-12-11"
+    },
+    {
+      "id": "Object1310",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 10",
+      "room": "Room13",
+      "dimensions_cm": {
+        "length": 141.1,
+        "width": 74.3,
+        "height": 296.3
+      },
+      "material": "Glass",
+      "status": "Installed",
+      "installed_date": "2023-10-03"
+    },
+    {
+      "id": "Object141",
+      "type": "Floor Finish",
+      "name": "Floor Finish 1",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 226.2,
+        "width": 62.3,
+        "height": 80.7
+      },
+      "material": "Glass",
+      "status": "Approved",
+      "installed_date": "2023-01-07"
+    },
+    {
+      "id": "Object142",
+      "type": "Wall",
+      "name": "Wall 2",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 236.7,
+        "width": 50.2,
+        "height": 295.3
+      },
+      "material": "Glass",
+      "status": "Approved",
+      "installed_date": "2023-03-26"
+    },
+    {
+      "id": "Object143",
+      "type": "Baseboard",
+      "name": "Baseboard 3",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 77.5,
+        "width": 88.7,
+        "height": 190.5
+      },
+      "material": "Wood",
+      "status": "Defective",
+      "installed_date": "2023-06-07"
+    },
+    {
+      "id": "Object144",
+      "type": "Floor Finish",
+      "name": "Floor Finish 4",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 117.2,
+        "width": 17.6,
+        "height": 85.0
+      },
+      "material": "Concrete",
+      "status": "Installed",
+      "installed_date": "2023-12-28"
+    },
+    {
+      "id": "Object145",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 5",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 68.6,
+        "width": 84.2,
+        "height": 43.2
+      },
+      "material": "Wood",
+      "status": "Approved",
+      "installed_date": "2023-01-01"
+    },
+    {
+      "id": "Object146",
+      "type": "Outlet",
+      "name": "Outlet 6",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 276.9,
+        "width": 94.7,
+        "height": 189.3
+      },
+      "material": "Glass",
+      "status": "Pending",
+      "installed_date": "2023-09-08"
+    },
+    {
+      "id": "Object147",
+      "type": "Window",
+      "name": "Window 7",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 276.9,
+        "width": 65.0,
+        "height": 261.6
+      },
+      "material": "Plastic",
+      "status": "Defective",
+      "installed_date": "2023-07-04"
+    },
+    {
+      "id": "Object148",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 8",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 128.4,
+        "width": 13.4,
+        "height": 10.0
+      },
+      "material": "Wood",
+      "status": "Defective",
+      "installed_date": "2023-07-15"
+    },
+    {
+      "id": "Object149",
+      "type": "Wall",
+      "name": "Wall 9",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 142.0,
+        "width": 44.9,
+        "height": 273.7
+      },
+      "material": "Concrete",
+      "status": "Pending",
+      "installed_date": "2023-11-11"
+    },
+    {
+      "id": "Object1410",
+      "type": "Baseboard",
+      "name": "Baseboard 10",
+      "room": "Room14",
+      "dimensions_cm": {
+        "length": 191.3,
+        "width": 22.3,
+        "height": 150.4
+      },
+      "material": "Steel",
+      "status": "Installed",
+      "installed_date": "2023-02-03"
+    },
+    {
+      "id": "Object211",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 1",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 76.2,
+        "width": 67.7,
+        "height": 216.0
+      },
+      "material": "Concrete",
+      "status": "In Progress",
+      "installed_date": "2023-11-09"
+    },
+    {
+      "id": "Object212",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 2",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 244.4,
+        "width": 92.5,
+        "height": 210.9
+      },
+      "material": "Wood",
+      "status": "Defective",
+      "installed_date": "2023-04-27"
+    },
+    {
+      "id": "Object213",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 3",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 152.5,
+        "width": 40.0,
+        "height": 79.3
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-12-02"
+    },
+    {
+      "id": "Object214",
+      "type": "Outlet",
+      "name": "Outlet 4",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 282.8,
+        "width": 27.8,
+        "height": 151.8
+      },
+      "material": "Wood",
+      "status": "Approved",
+      "installed_date": "2023-07-16"
+    },
+    {
+      "id": "Object215",
+      "type": "Wall",
+      "name": "Wall 5",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 293.0,
+        "width": 24.5,
+        "height": 238.7
+      },
+      "material": "Concrete",
+      "status": "Pending",
+      "installed_date": "2023-12-21"
+    },
+    {
+      "id": "Object216",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 6",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 59.0,
+        "width": 25.7,
+        "height": 231.1
+      },
+      "material": "Concrete",
+      "status": "Installed",
+      "installed_date": "2023-03-09"
+    },
+    {
+      "id": "Object217",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 7",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 139.8,
+        "width": 34.5,
+        "height": 142.1
+      },
+      "material": "Plastic",
+      "status": "Pending",
+      "installed_date": "2023-05-19"
+    },
+    {
+      "id": "Object218",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 8",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 220.7,
+        "width": 72.1,
+        "height": 220.3
+      },
+      "material": "Concrete",
+      "status": "In Progress",
+      "installed_date": "2023-05-08"
+    },
+    {
+      "id": "Object219",
+      "type": "Wall",
+      "name": "Wall 9",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 91.6,
+        "width": 84.7,
+        "height": 266.8
+      },
+      "material": "Steel",
+      "status": "Installed",
+      "installed_date": "2023-05-24"
+    },
+    {
+      "id": "Object2110",
+      "type": "Sprinkler",
+      "name": "Sprinkler 10",
+      "room": "Room21",
+      "dimensions_cm": {
+        "length": 195.0,
+        "width": 18.1,
+        "height": 64.6
+      },
+      "material": "Wood",
+      "status": "Defective",
+      "installed_date": "2023-06-01"
+    },
+    {
+      "id": "Object221",
+      "type": "Window",
+      "name": "Window 1",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 291.1,
+        "width": 44.7,
+        "height": 157.8
+      },
+      "material": "Steel",
+      "status": "Installed",
+      "installed_date": "2023-02-20"
+    },
+    {
+      "id": "Object222",
+      "type": "Wall",
+      "name": "Wall 2",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 294.4,
+        "width": 6.6,
+        "height": 280.8
+      },
+      "material": "Wood",
+      "status": "Pending",
+      "installed_date": "2023-01-26"
+    },
+    {
+      "id": "Object223",
+      "type": "Wall",
+      "name": "Wall 3",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 77.8,
+        "width": 83.8,
+        "height": 53.1
+      },
+      "material": "Glass",
+      "status": "Pending",
+      "installed_date": "2023-06-09"
+    },
+    {
+      "id": "Object224",
+      "type": "Floor Finish",
+      "name": "Floor Finish 4",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 152.2,
+        "width": 46.0,
+        "height": 267.6
+      },
+      "material": "Wood",
+      "status": "Approved",
+      "installed_date": "2023-02-06"
+    },
+    {
+      "id": "Object225",
+      "type": "Baseboard",
+      "name": "Baseboard 5",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 197.7,
+        "width": 75.8,
+        "height": 173.6
+      },
+      "material": "Concrete",
+      "status": "Approved",
+      "installed_date": "2023-10-18"
+    },
+    {
+      "id": "Object226",
+      "type": "Floor Finish",
+      "name": "Floor Finish 6",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 172.8,
+        "width": 43.5,
+        "height": 216.2
+      },
+      "material": "Wood",
+      "status": "Pending",
+      "installed_date": "2023-10-10"
+    },
+    {
+      "id": "Object227",
+      "type": "Baseboard",
+      "name": "Baseboard 7",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 155.5,
+        "width": 76.9,
+        "height": 50.4
+      },
+      "material": "Wood",
+      "status": "Pending",
+      "installed_date": "2023-01-20"
+    },
+    {
+      "id": "Object228",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 8",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 181.2,
+        "width": 81.1,
+        "height": 179.7
+      },
+      "material": "Glass",
+      "status": "Pending",
+      "installed_date": "2023-05-06"
+    },
+    {
+      "id": "Object229",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 9",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 262.5,
+        "width": 8.2,
+        "height": 288.1
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-05-27"
+    },
+    {
+      "id": "Object2210",
+      "type": "Floor Finish",
+      "name": "Floor Finish 10",
+      "room": "Room22",
+      "dimensions_cm": {
+        "length": 110.3,
+        "width": 52.5,
+        "height": 22.8
+      },
+      "material": "Steel",
+      "status": "Approved",
+      "installed_date": "2023-05-10"
+    },
+    {
+      "id": "Object231",
+      "type": "Floor Finish",
+      "name": "Floor Finish 1",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 264.5,
+        "width": 15.5,
+        "height": 174.5
+      },
+      "material": "Gypsum",
+      "status": "Defective",
+      "installed_date": "2023-09-05"
+    },
+    {
+      "id": "Object232",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 2",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 293.0,
+        "width": 66.0,
+        "height": 165.3
+      },
+      "material": "Plastic",
+      "status": "Pending",
+      "installed_date": "2023-11-13"
+    },
+    {
+      "id": "Object233",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 3",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 56.9,
+        "width": 83.5,
+        "height": 204.1
+      },
+      "material": "Steel",
+      "status": "Approved",
+      "installed_date": "2023-06-30"
+    },
+    {
+      "id": "Object234",
+      "type": "Wall",
+      "name": "Wall 4",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 276.3,
+        "width": 43.7,
+        "height": 103.1
+      },
+      "material": "Gypsum",
+      "status": "Installed",
+      "installed_date": "2023-11-15"
+    },
+    {
+      "id": "Object235",
+      "type": "Wall",
+      "name": "Wall 5",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 57.7,
+        "width": 54.0,
+        "height": 145.7
+      },
+      "material": "Steel",
+      "status": "Defective",
+      "installed_date": "2023-02-06"
+    },
+    {
+      "id": "Object236",
+      "type": "Floor Finish",
+      "name": "Floor Finish 6",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 118.6,
+        "width": 84.6,
+        "height": 231.6
+      },
+      "material": "Concrete",
+      "status": "In Progress",
+      "installed_date": "2023-02-02"
+    },
+    {
+      "id": "Object237",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 7",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 187.2,
+        "width": 96.4,
+        "height": 177.5
+      },
+      "material": "Gypsum",
+      "status": "In Progress",
+      "installed_date": "2023-01-11"
+    },
+    {
+      "id": "Object238",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 8",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 246.3,
+        "width": 23.7,
+        "height": 186.3
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-08-27"
+    },
+    {
+      "id": "Object239",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 9",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 249.6,
+        "width": 88.1,
+        "height": 285.1
+      },
+      "material": "Plastic",
+      "status": "In Progress",
+      "installed_date": "2023-09-28"
+    },
+    {
+      "id": "Object2310",
+      "type": "Floor Finish",
+      "name": "Floor Finish 10",
+      "room": "Room23",
+      "dimensions_cm": {
+        "length": 279.1,
+        "width": 96.4,
+        "height": 62.9
+      },
+      "material": "Plastic",
+      "status": "Pending",
+      "installed_date": "2023-12-19"
+    },
+    {
+      "id": "Object241",
+      "type": "Outlet",
+      "name": "Outlet 1",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 204.6,
+        "width": 43.3,
+        "height": 228.9
+      },
+      "material": "Concrete",
+      "status": "In Progress",
+      "installed_date": "2023-12-15"
+    },
+    {
+      "id": "Object242",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 2",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 93.9,
+        "width": 57.4,
+        "height": 112.9
+      },
+      "material": "Concrete",
+      "status": "In Progress",
+      "installed_date": "2023-05-27"
+    },
+    {
+      "id": "Object243",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 3",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 84.9,
+        "width": 63.8,
+        "height": 90.5
+      },
+      "material": "Concrete",
+      "status": "Approved",
+      "installed_date": "2023-02-06"
+    },
+    {
+      "id": "Object244",
+      "type": "Sprinkler",
+      "name": "Sprinkler 4",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 150.6,
+        "width": 32.9,
+        "height": 248.2
+      },
+      "material": "Gypsum",
+      "status": "Defective",
+      "installed_date": "2023-12-04"
+    },
+    {
+      "id": "Object245",
+      "type": "Door",
+      "name": "Door 5",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 88.3,
+        "width": 13.3,
+        "height": 250.3
+      },
+      "material": "Concrete",
+      "status": "Approved",
+      "installed_date": "2023-11-23"
+    },
+    {
+      "id": "Object246",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 6",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 155.2,
+        "width": 95.3,
+        "height": 111.6
+      },
+      "material": "Steel",
+      "status": "Installed",
+      "installed_date": "2023-05-13"
+    },
+    {
+      "id": "Object247",
+      "type": "Sprinkler",
+      "name": "Sprinkler 7",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 108.7,
+        "width": 74.7,
+        "height": 166.1
+      },
+      "material": "Plastic",
+      "status": "Installed",
+      "installed_date": "2023-11-13"
+    },
+    {
+      "id": "Object248",
+      "type": "Sprinkler",
+      "name": "Sprinkler 8",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 69.4,
+        "width": 46.2,
+        "height": 190.3
+      },
+      "material": "Plastic",
+      "status": "Approved",
+      "installed_date": "2023-02-14"
+    },
+    {
+      "id": "Object249",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 9",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 70.6,
+        "width": 91.0,
+        "height": 170.6
+      },
+      "material": "Steel",
+      "status": "Pending",
+      "installed_date": "2023-02-21"
+    },
+    {
+      "id": "Object2410",
+      "type": "Door",
+      "name": "Door 10",
+      "room": "Room24",
+      "dimensions_cm": {
+        "length": 98.5,
+        "width": 46.4,
+        "height": 116.3
+      },
+      "material": "Wood",
+      "status": "Installed",
+      "installed_date": "2023-01-14"
+    },
+    {
+      "id": "Object311",
+      "type": "Outlet",
+      "name": "Outlet 1",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 271.1,
+        "width": 39.2,
+        "height": 122.5
+      },
+      "material": "Concrete",
+      "status": "Approved",
+      "installed_date": "2023-03-15"
+    },
+    {
+      "id": "Object312",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 2",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 169.0,
+        "width": 93.6,
+        "height": 52.3
+      },
+      "material": "Gypsum",
+      "status": "Defective",
+      "installed_date": "2023-12-05"
+    },
+    {
+      "id": "Object313",
+      "type": "Wall",
+      "name": "Wall 3",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 110.9,
+        "width": 37.2,
+        "height": 134.5
+      },
+      "material": "Glass",
+      "status": "Pending",
+      "installed_date": "2023-08-01"
+    },
+    {
+      "id": "Object314",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 4",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 188.5,
+        "width": 58.0,
+        "height": 101.7
+      },
+      "material": "Plastic",
+      "status": "Approved",
+      "installed_date": "2023-02-03"
+    },
+    {
+      "id": "Object315",
+      "type": "Wall",
+      "name": "Wall 5",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 107.4,
+        "width": 95.7,
+        "height": 121.2
+      },
+      "material": "Wood",
+      "status": "Installed",
+      "installed_date": "2023-07-31"
+    },
+    {
+      "id": "Object316",
+      "type": "Door",
+      "name": "Door 6",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 217.1,
+        "width": 42.4,
+        "height": 231.1
+      },
+      "material": "Steel",
+      "status": "Defective",
+      "installed_date": "2023-01-25"
+    },
+    {
+      "id": "Object317",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 7",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 144.5,
+        "width": 81.1,
+        "height": 285.4
+      },
+      "material": "Plastic",
+      "status": "Pending",
+      "installed_date": "2023-06-15"
+    },
+    {
+      "id": "Object318",
+      "type": "Sprinkler",
+      "name": "Sprinkler 8",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 256.8,
+        "width": 84.0,
+        "height": 290.3
+      },
+      "material": "Wood",
+      "status": "Approved",
+      "installed_date": "2023-05-07"
+    },
+    {
+      "id": "Object319",
+      "type": "Window",
+      "name": "Window 9",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 268.4,
+        "width": 72.9,
+        "height": 297.7
+      },
+      "material": "Glass",
+      "status": "Approved",
+      "installed_date": "2023-09-08"
+    },
+    {
+      "id": "Object3110",
+      "type": "Floor Finish",
+      "name": "Floor Finish 10",
+      "room": "Room31",
+      "dimensions_cm": {
+        "length": 175.3,
+        "width": 7.2,
+        "height": 83.7
+      },
+      "material": "Plastic",
+      "status": "Pending",
+      "installed_date": "2023-09-09"
+    },
+    {
+      "id": "Object321",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 1",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 180.6,
+        "width": 26.6,
+        "height": 295.2
+      },
+      "material": "Plastic",
+      "status": "Defective",
+      "installed_date": "2023-12-31"
+    },
+    {
+      "id": "Object322",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 2",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 52.5,
+        "width": 35.8,
+        "height": 268.8
+      },
+      "material": "Gypsum",
+      "status": "Pending",
+      "installed_date": "2023-07-03"
+    },
+    {
+      "id": "Object323",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 3",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 94.1,
+        "width": 84.3,
+        "height": 31.9
+      },
+      "material": "Steel",
+      "status": "In Progress",
+      "installed_date": "2023-01-25"
+    },
+    {
+      "id": "Object324",
+      "type": "Outlet",
+      "name": "Outlet 4",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 219.9,
+        "width": 81.6,
+        "height": 179.8
+      },
+      "material": "Concrete",
+      "status": "Pending",
+      "installed_date": "2023-12-03"
+    },
+    {
+      "id": "Object325",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 5",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 256.7,
+        "width": 11.8,
+        "height": 135.5
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-11-01"
+    },
+    {
+      "id": "Object326",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 6",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 173.4,
+        "width": 33.8,
+        "height": 242.0
+      },
+      "material": "Glass",
+      "status": "Approved",
+      "installed_date": "2023-05-11"
+    },
+    {
+      "id": "Object327",
+      "type": "Window",
+      "name": "Window 7",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 153.4,
+        "width": 52.7,
+        "height": 127.4
+      },
+      "material": "Glass",
+      "status": "Pending",
+      "installed_date": "2023-02-18"
+    },
+    {
+      "id": "Object328",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 8",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 198.1,
+        "width": 77.9,
+        "height": 158.7
+      },
+      "material": "Wood",
+      "status": "Approved",
+      "installed_date": "2023-05-27"
+    },
+    {
+      "id": "Object329",
+      "type": "Sprinkler",
+      "name": "Sprinkler 9",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 206.1,
+        "width": 39.4,
+        "height": 196.6
+      },
+      "material": "Concrete",
+      "status": "In Progress",
+      "installed_date": "2023-05-12"
+    },
+    {
+      "id": "Object3210",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 10",
+      "room": "Room32",
+      "dimensions_cm": {
+        "length": 160.3,
+        "width": 98.6,
+        "height": 225.5
+      },
+      "material": "Concrete",
+      "status": "Pending",
+      "installed_date": "2023-09-25"
+    },
+    {
+      "id": "Object331",
+      "type": "Wall",
+      "name": "Wall 1",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 140.1,
+        "width": 68.4,
+        "height": 99.5
+      },
+      "material": "Wood",
+      "status": "Defective",
+      "installed_date": "2023-03-14"
+    },
+    {
+      "id": "Object332",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 2",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 88.5,
+        "width": 60.5,
+        "height": 21.3
+      },
+      "material": "Glass",
+      "status": "Installed",
+      "installed_date": "2023-07-10"
+    },
+    {
+      "id": "Object333",
+      "type": "Baseboard",
+      "name": "Baseboard 3",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 90.9,
+        "width": 60.3,
+        "height": 179.4
+      },
+      "material": "Concrete",
+      "status": "Installed",
+      "installed_date": "2023-11-16"
+    },
+    {
+      "id": "Object334",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 4",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 270.4,
+        "width": 97.9,
+        "height": 215.9
+      },
+      "material": "Glass",
+      "status": "In Progress",
+      "installed_date": "2023-12-12"
+    },
+    {
+      "id": "Object335",
+      "type": "Window",
+      "name": "Window 5",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 63.3,
+        "width": 17.8,
+        "height": 128.9
+      },
+      "material": "Wood",
+      "status": "In Progress",
+      "installed_date": "2023-12-07"
+    },
+    {
+      "id": "Object336",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 6",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 290.7,
+        "width": 97.8,
+        "height": 132.0
+      },
+      "material": "Plastic",
+      "status": "Approved",
+      "installed_date": "2023-03-19"
+    },
+    {
+      "id": "Object337",
+      "type": "Ceiling Light",
+      "name": "Ceiling Light 7",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 180.5,
+        "width": 57.1,
+        "height": 166.1
+      },
+      "material": "Plastic",
+      "status": "Defective",
+      "installed_date": "2023-12-04"
+    },
+    {
+      "id": "Object338",
+      "type": "Sprinkler",
+      "name": "Sprinkler 8",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 241.3,
+        "width": 91.8,
+        "height": 157.9
+      },
+      "material": "Concrete",
+      "status": "Pending",
+      "installed_date": "2023-08-01"
+    },
+    {
+      "id": "Object339",
+      "type": "Floor Finish",
+      "name": "Floor Finish 9",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 294.5,
+        "width": 26.8,
+        "height": 131.6
+      },
+      "material": "Wood",
+      "status": "Installed",
+      "installed_date": "2023-02-22"
+    },
+    {
+      "id": "Object3310",
+      "type": "Wall",
+      "name": "Wall 10",
+      "room": "Room33",
+      "dimensions_cm": {
+        "length": 103.6,
+        "width": 22.4,
+        "height": 114.8
+      },
+      "material": "Concrete",
+      "status": "Approved",
+      "installed_date": "2023-12-16"
+    },
+    {
+      "id": "Object341",
+      "type": "Floor Finish",
+      "name": "Floor Finish 1",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 108.4,
+        "width": 33.7,
+        "height": 50.3
+      },
+      "material": "Plastic",
+      "status": "Installed",
+      "installed_date": "2023-08-19"
+    },
+    {
+      "id": "Object342",
+      "type": "Wall",
+      "name": "Wall 2",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 83.0,
+        "width": 32.9,
+        "height": 291.3
+      },
+      "material": "Steel",
+      "status": "Approved",
+      "installed_date": "2023-06-25"
+    },
+    {
+      "id": "Object343",
+      "type": "Window",
+      "name": "Window 3",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 175.9,
+        "width": 28.7,
+        "height": 28.9
+      },
+      "material": "Plastic",
+      "status": "Pending",
+      "installed_date": "2023-10-24"
+    },
+    {
+      "id": "Object344",
+      "type": "Window",
+      "name": "Window 4",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 151.3,
+        "width": 46.2,
+        "height": 146.2
+      },
+      "material": "Plastic",
+      "status": "Installed",
+      "installed_date": "2023-05-15"
+    },
+    {
+      "id": "Object345",
+      "type": "HVAC Vent",
+      "name": "HVAC Vent 5",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 60.5,
+        "width": 63.7,
+        "height": 290.4
+      },
+      "material": "Plastic",
+      "status": "Defective",
+      "installed_date": "2023-03-15"
+    },
+    {
+      "id": "Object346",
+      "type": "Fire Alarm",
+      "name": "Fire Alarm 6",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 107.5,
+        "width": 52.9,
+        "height": 131.4
+      },
+      "material": "Plastic",
+      "status": "In Progress",
+      "installed_date": "2023-12-02"
+    },
+    {
+      "id": "Object347",
+      "type": "Outlet",
+      "name": "Outlet 7",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 103.3,
+        "width": 23.6,
+        "height": 184.2
+      },
+      "material": "Glass",
+      "status": "Approved",
+      "installed_date": "2023-03-01"
+    },
+    {
+      "id": "Object348",
+      "type": "Wall",
+      "name": "Wall 8",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 227.0,
+        "width": 74.9,
+        "height": 40.3
+      },
+      "material": "Steel",
+      "status": "Installed",
+      "installed_date": "2023-06-29"
+    },
+    {
+      "id": "Object349",
+      "type": "Outlet",
+      "name": "Outlet 9",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 223.8,
+        "width": 16.7,
+        "height": 216.3
+      },
+      "material": "Steel",
+      "status": "Pending",
+      "installed_date": "2023-12-26"
+    },
+    {
+      "id": "Object3410",
+      "type": "Wall",
+      "name": "Wall 10",
+      "room": "Room34",
+      "dimensions_cm": {
+        "length": 286.1,
+        "width": 77.9,
+        "height": 124.1
+      },
+      "material": "Wood",
+      "status": "Defective",
+      "installed_date": "2023-08-15"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Project1",
+      "target": "Story1",
+      "type": "contains"
+    },
+    {
+      "source": "Project1",
+      "target": "Story2",
+      "type": "contains"
+    },
+    {
+      "source": "Project1",
+      "target": "Story3",
+      "type": "contains"
+    },
+    {
+      "source": "Story1",
+      "target": "Room11",
+      "type": "contains"
+    },
+    {
+      "source": "Story1",
+      "target": "Room12",
+      "type": "contains"
+    },
+    {
+      "source": "Story1",
+      "target": "Room13",
+      "type": "contains"
+    },
+    {
+      "source": "Story1",
+      "target": "Room14",
+      "type": "contains"
+    },
+    {
+      "source": "Story2",
+      "target": "Room21",
+      "type": "contains"
+    },
+    {
+      "source": "Story2",
+      "target": "Room22",
+      "type": "contains"
+    },
+    {
+      "source": "Story2",
+      "target": "Room23",
+      "type": "contains"
+    },
+    {
+      "source": "Story2",
+      "target": "Room24",
+      "type": "contains"
+    },
+    {
+      "source": "Story3",
+      "target": "Room31",
+      "type": "contains"
+    },
+    {
+      "source": "Story3",
+      "target": "Room32",
+      "type": "contains"
+    },
+    {
+      "source": "Story3",
+      "target": "Room33",
+      "type": "contains"
+    },
+    {
+      "source": "Story3",
+      "target": "Room34",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object111",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object112",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object113",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object114",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object115",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object116",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object117",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object118",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object119",
+      "type": "contains"
+    },
+    {
+      "source": "Room11",
+      "target": "Object1110",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object121",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object122",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object123",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object124",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object125",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object126",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object127",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object128",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object129",
+      "type": "contains"
+    },
+    {
+      "source": "Room12",
+      "target": "Object1210",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object131",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object132",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object133",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object134",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object135",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object136",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object137",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object138",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object139",
+      "type": "contains"
+    },
+    {
+      "source": "Room13",
+      "target": "Object1310",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object141",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object142",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object143",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object144",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object145",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object146",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object147",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object148",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object149",
+      "type": "contains"
+    },
+    {
+      "source": "Room14",
+      "target": "Object1410",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object211",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object212",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object213",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object214",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object215",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object216",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object217",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object218",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object219",
+      "type": "contains"
+    },
+    {
+      "source": "Room21",
+      "target": "Object2110",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object221",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object222",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object223",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object224",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object225",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object226",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object227",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object228",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object229",
+      "type": "contains"
+    },
+    {
+      "source": "Room22",
+      "target": "Object2210",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object231",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object232",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object233",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object234",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object235",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object236",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object237",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object238",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object239",
+      "type": "contains"
+    },
+    {
+      "source": "Room23",
+      "target": "Object2310",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object241",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object242",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object243",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object244",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object245",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object246",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object247",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object248",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object249",
+      "type": "contains"
+    },
+    {
+      "source": "Room24",
+      "target": "Object2410",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object311",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object312",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object313",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object314",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object315",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object316",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object317",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object318",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object319",
+      "type": "contains"
+    },
+    {
+      "source": "Room31",
+      "target": "Object3110",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object321",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object322",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object323",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object324",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object325",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object326",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object327",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object328",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object329",
+      "type": "contains"
+    },
+    {
+      "source": "Room32",
+      "target": "Object3210",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object331",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object332",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object333",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object334",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object335",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object336",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object337",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object338",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object339",
+      "type": "contains"
+    },
+    {
+      "source": "Room33",
+      "target": "Object3310",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object341",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object342",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object343",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object344",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object345",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object346",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object347",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object348",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object349",
+      "type": "contains"
+    },
+    {
+      "source": "Room34",
+      "target": "Object3410",
+      "type": "contains"
+    },
+    {
+      "source": "GeneralContractor",
+      "target": "GCTeam1",
+      "type": "manages"
+    },
+    {
+      "source": "Subcontractor1",
+      "target": "SubTeam1",
+      "type": "manages"
+    },
+    {
+      "source": "Subcontractor2",
+      "target": "SubTeam2",
+      "type": "manages"
+    },
+    {
+      "source": "GCTeam1",
+      "target": "Person1",
+      "type": "includes"
+    },
+    {
+      "source": "SubTeam1",
+      "target": "Person2",
+      "type": "includes"
+    },
+    {
+      "source": "SubTeam2",
+      "target": "Person3",
+      "type": "includes"
+    },
+    {
+      "source": "Room11",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room11",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room12",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room13",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room13",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room13",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room14",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room14",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room21",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room22",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room23",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room23",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room23",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room24",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room24",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room24",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room31",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room31",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room32",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room33",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Room34",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object111",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object112",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object112",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object112",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object113",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object113",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object114",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object114",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object115",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object115",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object116",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object117",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object118",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object119",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object119",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object1110",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object1110",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object121",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object121",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object121",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object122",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object122",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object123",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object124",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object124",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object124",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object125",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object125",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object126",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object126",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object126",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object127",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object127",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object128",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object128",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object129",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object129",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object1210",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object131",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object131",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object132",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object132",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object133",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object134",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object134",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object135",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object136",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object136",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object136",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object137",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object137",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object137",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object138",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object138",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object139",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object139",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object1310",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object141",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object141",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object141",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object142",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object143",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object144",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object144",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object145",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object146",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object146",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object147",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object147",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object148",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object148",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object149",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object1410",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object211",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object211",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object211",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object212",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object213",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object213",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object214",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object215",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object215",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object216",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object217",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object218",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object219",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2110",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2110",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2110",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object221",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object222",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object223",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object223",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object223",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object224",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object224",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object225",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object225",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object226",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object226",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object227",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object227",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object228",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object228",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object229",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object229",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2210",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2210",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2210",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object231",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object231",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object231",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object232",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object233",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object234",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object235",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object236",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object236",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object237",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object237",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object237",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object238",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object239",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object239",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object239",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2310",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2310",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2310",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object241",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object241",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object241",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object242",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object242",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object243",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object244",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object244",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object244",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object245",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object246",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object246",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object246",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object247",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object247",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object248",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object248",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object248",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object249",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object2410",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object311",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object311",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object311",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object312",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object313",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object313",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object313",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object314",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object314",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object314",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object315",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object316",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object316",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object317",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object317",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object317",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object318",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object319",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object319",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3110",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3110",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object321",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object321",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object322",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object322",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object322",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object323",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object324",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object324",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object325",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object325",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object326",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object326",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object326",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object327",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object327",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object327",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object328",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object328",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object329",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3210",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object331",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object332",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object333",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object333",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object334",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object335",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object336",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object336",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object336",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object337",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object337",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object338",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object338",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object339",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3310",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3310",
+      "target": "DrawingA102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3310",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object341",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object341",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object342",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object342",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object343",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object344",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object344",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object345",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object345",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object345",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object346",
+      "target": "Issue103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object346",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object347",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object347",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object348",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object348",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object348",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object349",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object349",
+      "target": "Issue101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3410",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Object3410",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object111",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object112",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object113",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object114",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object115",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object116",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object117",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object118",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object119",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object1110",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object121",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object122",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object123",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object124",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object125",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object126",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object127",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object128",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object129",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object1210",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object131",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object132",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object133",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object134",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object135",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object136",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object137",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object138",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object139",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object1310",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object141",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object142",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object143",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object144",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object145",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object146",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object147",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object148",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object149",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA101",
+      "target": "Object1410",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object211",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object212",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object213",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object214",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object215",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object216",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object217",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object218",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object219",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object2110",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object221",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object222",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object223",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object224",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object225",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object226",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object227",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object228",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object229",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object2210",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object231",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object232",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object233",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object234",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object235",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object236",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object237",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object238",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object239",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object2310",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object241",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object242",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object243",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object244",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object245",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object246",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object247",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object248",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object249",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA102",
+      "target": "Object2410",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object311",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object312",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object313",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object314",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object315",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object316",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object317",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object318",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object319",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object3110",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object321",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object322",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object323",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object324",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object325",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object326",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object327",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object328",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object329",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object3210",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object331",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object332",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object333",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object334",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object335",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object336",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object337",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object338",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object339",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object3310",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object341",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object342",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object343",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object344",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object345",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object346",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object347",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object348",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object349",
+      "type": "contains_object"
+    },
+    {
+      "source": "DrawingA103",
+      "target": "Object3410",
+      "type": "contains_object"
+    },
+    {
+      "source": "RFI001",
+      "target": "DrawingA103",
+      "type": "references_drawing"
+    },
+    {
+      "source": "RFI001",
+      "target": "Object3310",
+      "type": "references_object"
+    },
+    {
+      "source": "RFI001",
+      "target": "Person1",
+      "type": "assigned_to"
+    },
+    {
+      "source": "RFI002",
+      "target": "DrawingA101",
+      "type": "references_drawing"
+    },
+    {
+      "source": "RFI002",
+      "target": "Object115",
+      "type": "references_object"
+    },
+    {
+      "source": "RFI002",
+      "target": "Object144",
+      "type": "references_object"
+    },
+    {
+      "source": "RFI002",
+      "target": "Object1210",
+      "type": "references_object"
+    },
+    {
+      "source": "RFI002",
+      "target": "Person3",
+      "type": "assigned_to"
+    },
+    {
+      "source": "RFI003",
+      "target": "DrawingA101",
+      "type": "references_drawing"
+    },
+    {
+      "source": "RFI003",
+      "target": "Object1110",
+      "type": "references_object"
+    },
+    {
+      "source": "RFI003",
+      "target": "Object144",
+      "type": "references_object"
+    },
+    {
+      "source": "RFI003",
+      "target": "Object121",
+      "type": "references_object"
+    },
+    {
+      "source": "RFI003",
+      "target": "Person1",
+      "type": "assigned_to"
+    },
+    {
+      "source": "Issue101",
+      "target": "DrawingA103",
+      "type": "references_drawing"
+    },
+    {
+      "source": "Issue101",
+      "target": "Object3310",
+      "type": "references_object"
+    },
+    {
+      "source": "Issue101",
+      "target": "Person3",
+      "type": "assigned_to"
+    },
+    {
+      "source": "Issue102",
+      "target": "DrawingA102",
+      "type": "references_drawing"
+    },
+    {
+      "source": "Issue102",
+      "target": "Object231",
+      "type": "references_object"
+    },
+    {
+      "source": "Issue102",
+      "target": "Object2210",
+      "type": "references_object"
+    },
+    {
+      "source": "Issue102",
+      "target": "Person1",
+      "type": "assigned_to"
+    },
+    {
+      "source": "Issue103",
+      "target": "DrawingA101",
+      "type": "references_drawing"
+    },
+    {
+      "source": "Issue103",
+      "target": "Object137",
+      "type": "references_object"
+    },
+    {
+      "source": "Issue103",
+      "target": "Object111",
+      "type": "references_object"
+    },
+    {
+      "source": "Issue103",
+      "target": "Object134",
+      "type": "references_object"
+    },
+    {
+      "source": "Issue103",
+      "target": "Person3",
+      "type": "assigned_to"
+    },
+    {
+      "source": "Project1",
+      "target": "DrawingA101",
+      "type": "has_asset"
+    },
+    {
+      "source": "Subcontractor2",
+      "target": "DrawingA102",
+      "type": "submitted_asset"
+    },
+    {
+      "source": "Project1",
+      "target": "DrawingA103",
+      "type": "has_asset"
+    },
+    {
+      "source": "SubTeam2",
+      "target": "DrawingA103",
+      "type": "created_asset"
+    },
+    {
+      "source": "Project1",
+      "target": "RFI001",
+      "type": "has_asset"
+    },
+    {
+      "source": "Subcontractor1",
+      "target": "RFI001",
+      "type": "submitted_asset"
+    },
+    {
+      "source": "SubTeam2",
+      "target": "RFI001",
+      "type": "created_asset"
+    },
+    {
+      "source": "Project1",
+      "target": "RFI002",
+      "type": "has_asset"
+    },
+    {
+      "source": "Story1",
+      "target": "RFI002",
+      "type": "has_related_asset"
+    },
+    {
+      "source": "Project1",
+      "target": "RFI003",
+      "type": "has_asset"
+    },
+    {
+      "source": "Story3",
+      "target": "Issue101",
+      "type": "has_related_asset"
+    },
+    {
+      "source": "SubTeam2",
+      "target": "Issue101",
+      "type": "created_asset"
+    },
+    {
+      "source": "Project1",
+      "target": "Issue102",
+      "type": "has_asset"
+    },
+    {
+      "source": "Story2",
+      "target": "Issue102",
+      "type": "has_related_asset"
+    },
+    {
+      "source": "Subcontractor2",
+      "target": "Issue102",
+      "type": "submitted_asset"
+    },
+    {
+      "source": "GeneralContractor",
+      "target": "Issue103",
+      "type": "submitted_asset"
+    },
+    {
+      "source": "SubTeam1",
+      "target": "Issue103",
+      "type": "created_asset"
+    }
+  ],
+  "assets": [
+    {
+      "id": "DrawingA101",
+      "type": "Drawing",
+      "description": "Drawing related to construction.",
+      "date": "2023-07-09",
+      "status": "Open"
+    },
+    {
+      "id": "DrawingA102",
+      "type": "Drawing",
+      "description": "Drawing related to construction.",
+      "date": "2023-03-28",
+      "status": "Resolved"
+    },
+    {
+      "id": "DrawingA103",
+      "type": "Drawing",
+      "description": "Drawing related to construction.",
+      "date": "2023-10-17",
+      "status": "Pending"
+    },
+    {
+      "id": "RFI001",
+      "type": "RFI",
+      "description": "RFI related to construction.",
+      "date": "2023-06-03",
+      "status": "Open"
+    },
+    {
+      "id": "RFI002",
+      "type": "RFI",
+      "description": "RFI related to construction.",
+      "date": "2023-07-18",
+      "status": "Closed"
+    },
+    {
+      "id": "RFI003",
+      "type": "RFI",
+      "description": "RFI related to construction.",
+      "date": "2023-11-10",
+      "status": "Resolved"
+    },
+    {
+      "id": "Issue101",
+      "type": "Issue",
+      "description": "Issue related to construction.",
+      "date": "2023-05-30",
+      "status": "Resolved"
+    },
+    {
+      "id": "Issue102",
+      "type": "Issue",
+      "description": "Issue related to construction.",
+      "date": "2023-06-06",
+      "status": "Closed"
+    },
+    {
+      "id": "Issue103",
+      "type": "Issue",
+      "description": "Issue related to construction.",
+      "date": "2023-09-27",
+      "status": "Open"
+    }
+  ]
+}
